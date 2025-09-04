@@ -1,0 +1,24 @@
+{
+  "name": "atividade-back",
+  "version": "1.0.0",
+  "description": "Gabriel Klein",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eoklein/Atividade-Back.git"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eoklein/Atividade-Back/issues"
+  },
+  "homepage": "https://github.com/eoklein/Atividade-Back#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
