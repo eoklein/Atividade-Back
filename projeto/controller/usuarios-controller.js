@@ -97,9 +97,7 @@ function atualizarUsuario(req, res) {
     // Atualiza o email, se fornecido
     if (email) {
         // Verifica se o email já está em uso por outro usuário
-        let email_existe = usuarios.findIndex(
-            (usuario) => usuario.email === email
-        );
+        let email_existe = usuarios.findIndex((usuario) => usuario.email === email);
 
         // Evita conflito de e-mail
         if (email_existe !== -1) {
@@ -125,16 +123,8 @@ function atualizarUsuario(req, res) {
 // ------------------------
 function listarUsuarioId(req, res) {
     // Busca e retorna o usuário com o ID informado
-    return res.status(200).json(
-        usuarios.find((usuario) => usuario.id === parseInt(req.params.id))
-    );
+    return res.status(200).json(usuarios.find((usuario) => usuario.id === parseInt(req.params.id)));
 }
 
 // Exporta todas as funções para uso em rotas ou outros arquivos
-export {
-    listarTodosUsuarios,
-    criarUsuario,
-    deletarUsuario,
-    atualizarUsuario,
-    listarUsuarioId
-};
+export {listarTodosUsuarios, criarUsuario, deletarUsuario, atualizarUsuario, listarUsuarioId};
