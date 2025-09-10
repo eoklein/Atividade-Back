@@ -5,7 +5,7 @@ export function verificarAdm(req, res, next) {
     const { tipoUser } = req.body;
 
     // Verifica se o tipo de usuário é "ADM"
-    if (tipoUser === "ADM") {
+    if (tipoUser === "adm") {
         // Se for ADM, envia uma resposta com status 201 e mensagem de sucesso
         res.status(201).json({ mensagem: "Rota permitida!" });
 
